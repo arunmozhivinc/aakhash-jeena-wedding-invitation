@@ -49,7 +49,7 @@ function Hero({ weddingDate, isOpened }) {
       >
         <p className="mb-3 tracking-[0.25em] text-xs uppercase md:text-sm">We're Getting Married</p>
         <h1 className="font-heading text-5xl leading-tight md:text-7xl">
-          <span className="block md:inline">S. Aakash &amp;</span>{' '}
+          <span className="block md:inline">S. Aakhash &amp;</span>{' '}
           <span className="block md:inline">R. Jeena</span>
         </h1>
         <p className="mt-5 rounded-full glass-card px-6 py-2 text-sm md:text-base">{formattedDate}</p>
