@@ -22,14 +22,12 @@ function Gallery({ items, onImageClick }) {
 
       <div className="masonry">
         {items.map((item, index) => (
-          <motion.button
+          <motion.div
             key={`${item.src}-${index}`}
-            type="button"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.4, delay: index * 0.05 }}
-            onClick={() => onImageClick(item)}
             className="masonry-item group block w-full overflow-hidden rounded-2xl"
           >
             <div className={`overflow-hidden rounded-2xl ${aspectToClass[item.aspect] ?? aspectToClass.square}`}>
@@ -40,7 +38,7 @@ function Gallery({ items, onImageClick }) {
                 className="h-full w-full object-cover transition duration-500 group-hover:scale-110"
               />
             </div>
-          </motion.button>
+          </motion.div>
         ))}
       </div>
     </section>

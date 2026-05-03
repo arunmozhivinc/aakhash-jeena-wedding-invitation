@@ -7,7 +7,7 @@ const navItems = [
   { label: 'RSVP', href: '#rsvp' },
 ]
 
-function Hero({ weddingDate }) {
+function Hero({ weddingDate, isOpened }) {
   const { scrollY } = useScroll()
   const bgY = useTransform(scrollY, [0, 800], [0, 120])
   const formattedDate = weddingDate.toLocaleDateString('en-US', {
@@ -20,10 +20,9 @@ function Hero({ weddingDate }) {
   return (
     <header id="hero" className="relative min-h-screen">
       <motion.img
-        src="public/images/couple-hero.png"
+        src={`${import.meta.env.BASE_URL}images/couple-hero.png`}
         alt="Aakash and Jeena together"
-        style={{ y: bgY }}
-        className="absolute inset-0 h-full w-full object-cover object-center"
+        className="absolute inset-0 h-full w-full object-cover object-top"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/35 to-rosewood/55" />
 
@@ -44,12 +43,15 @@ function Hero({ weddingDate }) {
 
       <motion.div
         initial={{ opacity: 0, y: 24 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.1, ease: 'easeOut' }}
+        animate={isOpened ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
+        transition={{ duration: 1.1, delay: 0.3, ease: 'easeOut' }}
         className="relative z-10 mx-auto flex min-h-screen max-w-4xl flex-col items-center justify-center px-4 text-center text-white"
       >
         <p className="mb-3 tracking-[0.25em] text-xs uppercase md:text-sm">We're Getting Married</p>
-        <h1 className="font-heading text-5xl leading-tight md:text-7xl">S. Aakash &amp; R. Jeena</h1>
+        <h1 className="font-heading text-5xl leading-tight md:text-7xl">
+          <span className="block md:inline">S. Aakash &amp;</span>{' '}
+          <span className="block md:inline">R. Jeena</span>
+        </h1>
         <p className="mt-5 rounded-full glass-card px-6 py-2 text-sm md:text-base">{formattedDate}</p>
       </motion.div>
 

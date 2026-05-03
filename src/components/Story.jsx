@@ -27,7 +27,7 @@ function Story({ items }) {
             <img
               src={item.image}
               alt={item.title}
-              className={`h-72 w-full rounded-2xl object-cover ${index % 2 === 1 ? 'md:order-2' : ''}`}
+              className={`h-72 w-full rounded-2xl object-cover object-top ${index % 2 === 1 ? 'md:order-2' : ''}`}
             />
             <div className={index % 2 === 1 ? 'md:order-1' : ''}>
               <p className="text-sm font-medium text-rosewood/70">Chapter {index + 1}</p>
