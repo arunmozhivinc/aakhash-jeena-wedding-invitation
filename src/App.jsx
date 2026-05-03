@@ -11,31 +11,31 @@ import SectionDivider from './components/SectionDivider'
 import Story from './components/Story'
 
 const galleryItems = [
-  { src: '/images/couple-hero.png', alt: 'Couple portrait at golden hour', aspect: 'portrait' },
-  { src: '/images/invitation-card.png', alt: 'Wedding invitation design', aspect: 'landscape' },
-  { src: '/images/sketch-portrait.png', alt: 'Pencil sketch of the couple', aspect: 'portrait' },
-  { src: '/images/couple-hero.png', alt: 'Romantic couple photo closeup', aspect: 'square' },
-  { src: '/images/invitation-card.png', alt: 'Wedding invite card detail', aspect: 'landscape' },
+  { src: 'public/images/couple-hero.png', alt: 'Couple portrait at golden hour', aspect: 'portrait' },
+  { src: 'public/images/invitation-card.png', alt: 'Wedding invitation design', aspect: 'landscape' },
+  { src: 'public/images/sketch-portrait.png', alt: 'Pencil sketch of the couple', aspect: 'portrait' },
+  { src: 'public/images/couple-hero.png', alt: 'Romantic couple photo closeup', aspect: 'square' },
+  { src: 'public/images/invitation-card.png', alt: 'Wedding invite card detail', aspect: 'landscape' },
 ]
 
 const storyItems = [
   {
     title: 'A Serendipitous Hello',
     description:
-      'Aakash and Jeena met through family friends, and what began as a simple conversation turned into hours of laughter and comfort.',
-    image: '/images/sketch-portrait.png',
+      'Aakhash and Jeena met through family friends, and what began as a simple conversation turned into hours of laughter and comfort.',
+    image: 'public/images/sketch-portrait.png',
   },
   {
     title: 'Growing Together',
     description:
       'From quiet coffee dates to long evening walks, every moment deepened their bond and made their journey beautifully certain.',
-    image: '/images/couple-hero.png',
+    image: 'public/images/couple-hero.png',
   },
   {
     title: 'Forever Begins',
     description:
       "Now, with grateful hearts, they invite you to celebrate the beginning of their forever. Your presence means the world to them.",
-    image: '/images/invitation-card.png',
+    image: 'public/images/invitation-card.png',
   },
 ]
 

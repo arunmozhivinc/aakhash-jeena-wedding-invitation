@@ -20,7 +20,7 @@ function Hero({ weddingDate }) {
   return (
     <header id="hero" className="relative min-h-screen">
       <motion.img
-        src="/images/couple-hero.png"
+        src="public/images/couple-hero.png"
         alt="Aakash and Jeena together"
         style={{ y: bgY }}
         className="absolute inset-0 h-full w-full object-cover object-center"
