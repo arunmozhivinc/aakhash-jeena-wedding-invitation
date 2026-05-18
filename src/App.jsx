@@ -16,10 +16,13 @@ const getAsset = (path) => `${import.meta.env.BASE_URL}${path}`
 
 const galleryItems = [
   { src: getAsset('images/couple-hero1.jpeg'), alt: 'Couple portrait at golden hour', aspect: 'portrait' },
-  { src: getAsset('images/invitation-card.png'), alt: 'Wedding invitation design', aspect: 'landscape' },
+  { src: getAsset('images/image1.jpg'), alt: 'Wedding photo 1', aspect: 'landscape' },
   { src: getAsset('images/sketch-portrait.png'), alt: 'Pencil sketch of the couple', aspect: 'portrait' },
+  { src: getAsset('images/image2.jpg'), alt: 'Wedding photo 2', aspect: 'square' },
   { src: getAsset('images/couple-hero.png'), alt: 'Romantic couple photo closeup', aspect: 'square' },
-  { src: getAsset('images/invitation-card.png'), alt: 'Wedding invite card detail', aspect: 'landscape' },
+  { src: getAsset('images/image3.jpg'), alt: 'Wedding photo 3', aspect: 'landscape' },
+  // { src: getAsset('images/invitation-card.png'), alt: 'Wedding invitation design', aspect: 'landscape' },
+  { src: getAsset('images/image4.jpg'), alt: 'Wedding photo 4', aspect: 'portrait' },
 ]
 
 const storyItems = [
@@ -27,7 +30,7 @@ const storyItems = [
     title: 'A Serendipitous Hello',
     description:
       'Aakhash and Jeena met through family friends, and what began as a simple conversation turned into hours of laughter and comfort.',
-    image: getAsset('images/sketch-portrait.png'),
+    image: getAsset('images/image3.jpg'),
   },
   {
     title: 'Growing Together',

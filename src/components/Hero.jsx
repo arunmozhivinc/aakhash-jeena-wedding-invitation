@@ -20,7 +20,7 @@ function Hero({ weddingDate, isOpened }) {
   return (
     <header id="hero" className="relative min-h-screen">
       <motion.img
-        src={`${import.meta.env.BASE_URL}images/couple-hero.png`}
+        src={`${import.meta.env.BASE_URL}images/image2.jpg`}
         alt="Aakash and Jeena together"
         className="absolute inset-0 h-full w-full object-cover object-top"
       />
@@ -45,7 +45,7 @@ function Hero({ weddingDate, isOpened }) {
         initial={{ opacity: 0, y: 24 }}
         animate={isOpened ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
         transition={{ duration: 1.1, delay: 0.3, ease: 'easeOut' }}
-        className="relative z-10 mx-auto flex min-h-screen max-w-4xl flex-col items-center justify-center px-4 text-center text-white"
+        className="relative z-10 mx-auto flex min-h-screen max-w-4xl flex-col items-center justify-center px-4 pt-[20vh] text-center text-white md:pt-[25vh]"
       >
         <p className="mb-3 tracking-[0.25em] text-xs uppercase md:text-sm">We're Getting Married</p>
         <h1 className="font-heading text-5xl leading-tight md:text-7xl">
